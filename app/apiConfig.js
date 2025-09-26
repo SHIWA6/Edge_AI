@@ -1,9 +1,6 @@
 // src/apiConfig.js
 
-let API_BASE_URL = 'http://localhost:5000'
+let API_BASE_URL = "https://edge-ai-4pes.onrender.com/";
 
-if (process.env.NODE_ENV === 'production') {
-  API_BASE_URL = "https://vocalizeai.onrender.com";
-}
 
 export { API_BASE_URL }
