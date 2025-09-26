@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EdgeAI – Full-Stack AI Voice Assistant 🎤🤖
 
-## Getting Started
+**EdgeAI** is a cutting-edge **AI voice assistant** built with **Next.js** and deployed via **Docker**. It supports **real-time audio processing**, **noise suppression**, and **intelligent AI responses** using the **Google Gemini API**. Optimized for both **desktop and mobile** platforms.  
 
-First, run the development server:
+---
 
+## Features ✨
+- **Client-Side Audio Pipeline**  
+  - Mobile-optimized with **WebM/Opus formats**  
+  - Built-in **noise suppression** for clear audio  
+
+- **Intelligent AI Responses**  
+  - **RESTful API** for audio transcription  
+  - Powered by **Google Gemini API** for context-aware replies  
+
+- **Seamless UX**  
+  - **Browser-native Text-to-Speech (TTS)** for real-time audio feedback  
+  - Smooth **state management** for interactive experience  
+
+- **Scalable Deployment**  
+  - Dockerized for **production-ready deployment**  
+  - Portable and easy to scale  
+
+---
+
+## Tech Stack 🛠️
+- **Frontend:** Next.js, React, TailwindCSS  
+- **Backend:** Node.js, Express, REST API  
+- **AI Integration:** Google Gemini API, TTS & Audio Processing libraries  
+- **Deployment:** Docker, optimized for production  
+
+---
+
+## Live Demo 🔗
+[Click here to try EdgeAI](#)  
+
+---
+
+## Installation & Setup 🖥️
+
+1. **Clone the repository**  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/<your-username>/EdgeAI.git
+cd EdgeAI
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**  
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Set environment variables**  
+Create a `.env` file and add:  
+```env
+GOOGLE_GEMINI_API_KEY=your_api_key_here
+PORT=3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Run locally**  
+```bash
+npm run dev
+```
 
-## Learn More
+5. **Docker Deployment**  
+```bash
+docker build -t edgeai .
+docker run -p 3000:3000 edgeai
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots 📸
+*(Add screenshots or GIFs of the assistant in action here)*  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Contributing 🤝
+Contributions are welcome! Feel free to open an issue or submit a pull request.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License 📝
+This project is **MIT licensed**.
